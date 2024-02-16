@@ -1,6 +1,13 @@
 <p class="m-auto w-100">Type in the profile name!</p>
-<form class="example-form">
-  <mat-form-field class="">
-    <input matInput placeholder="Eg: adheesh1107" />
-  </mat-form-field>
-</form>
+<!-- <form (submit)="onSubmit()" class="example-form">
+  <mat-form-field class=""> -->
+<input
+  matInput
+  class="form-control"
+  placeholder="Eg: adheesh1107"
+  [(ngModel)]="profileName"
+/>
+<br />
+<button class="btn btn-primary" (click)="onSubmit()">Go!</button>
+<!-- </mat-form-field> -->
+<!-- </form> -->
