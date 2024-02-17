@@ -1,13 +1,21 @@
-<p class="m-auto w-100">Type in the profile name!</p>
-<!-- <form (submit)="onSubmit()" class="example-form">
-  <mat-form-field class=""> -->
-<input
-  matInput
-  class="form-control"
-  placeholder="Eg: adheesh1107"
-  [(ngModel)]="profileName"
-/>
-<br />
-<button class="btn btn-primary" (click)="onSubmit()">Go!</button>
-<!-- </mat-form-field> -->
-<!-- </form> -->
+<div class="home-page-container">
+  <div class="profile-search-container">
+    <p class="text-white">Search your profile</p>
+    <form (submit)="onSubmit()" class="example-form text-center">
+      <input
+        matInput
+        class="form-control"
+        name="profileName"
+        placeholder="Eg: Adheesh1107"
+        [(ngModel)]="profileName"
+      />
+      <br />
+
+      <button class="btn btn-primary mx-auto">Go!</button>
+    </form>
+
+    <div *ngIf="isError" class="error-container text-white mt-3">
+      Error occurred : {{ errorText }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+@import "../../theme/variables";
+.home-page-container {
+  background-color: $theme-black;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  .profile-search-container {
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input {
+    width: 20rem;
+  }
+}
